@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Reis e Souza | Desenvolvedora Front-end</title>
+    <meta name="description" content="Portfólio de Gabriela Reis e Souza - Estudante de Desenvolvimento Full Stack com foco em Front-end.">
+    
+    <!-- Importação de Fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Importação dos Ícones do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Importação do Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="cabecalho" id="cabecalho">
+        <div class="conteiner navegacao">
+            <a href="#inicio" class="logotipo">
+                <span class="icone-codigo">&lt;/&gt;</span>
+                <span class="texto-logo">Gabriela<span class="ponto-destaque">.dev</span></span>
+            </a>
+
+            <!-- Menu Desktop / Mobile -->
+            <nav class="menu-navegacao" id="menuNavegacao">
+                <a href="#inicio" class="link-menu ativo">Início</a>
+                <a href="#sobre" class="link-menu">Sobre Mim</a>
+                <a href="#educacao" class="link-menu">Formação</a>
+                <a href="#habilidades" class="link-menu">Habilidades</a>
+                <a href="#projetos" class="link-menu">Projetos</a>
+                <a href="#contato" class="link-menu">Contato</a>
+            </nav>
+
+            <div class="acoes-cabecalho">
+                <!-- Botão de Alternar Tema (Dark/Light Mode) -->
+                <button type="button" class="botao-tema" id="botaoTema" aria-label="Alternar tema claro/escuro">
+                    <i class="bi bi-moon-stars-fill icone-lua"></i>
+                    <i class="bi bi-sun-fill icone-sol"></i>
+                </button>
+
+                <!-- Botão Hambúrguer para Mobile -->
+                <button type="button" class="botao-hamburguer" id="botaoHamburguer" aria-label="Abrir menu de navegação">
+                    <i class="bi bi-list icone-abrir"></i>
+                    <i class="bi bi-x-lg icone-fechar"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO / APRESENTAÇÃO -->
+    <section class="secao-hero" id="inicio">
+        <div class="conteiner hero-grid">
+            <div class="hero-conteudo">
+                <div class="selo-disponibilidade elemento-revelar">
+                    <span class="ponto-status"></span>
+                    <span>Estudante de TI & Desenvolvedora Front-end</span>
+                </div>
+
+                <h1 class="titulo-principal elemento-revelar">
+                    Olá! Eu sou <br>
+                    <span class="nome-destaque">Gabriela Reis e Souza</span>
+                </h1>
+
+                <!-- Texto com efeito de máquina de escrever via JS -->
+                <div class="container-efeito-digitar elemento-revelar">
+                    <span class="subtitulo-cargo" id="textoEfeitoDigitar"></span>
+                    <span class="cursor-piscando">|</span>
+                </div>
+
+                <p class="descricao-hero elemento-revelar">
+                    Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola / SENAC</strong>. Apaixonada por criar interfaces interativas, modernas e responsivas, buscando minha primeira oportunidade na área de tecnologia.
+                </p>
+
+                <div class="botoes-hero elemento-revelar">
+                    <a href="curriculo.pdf" class="botao botao-primario" download="Curriculo_Gabriela_Reis.pdf">
+                        <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        Baixar meu CV
+                    </a>
+                    <a href="#contato" class="botao botao-secundario">
+                        <i class="bi bi-chat-dots-fill"></i>
+                        Vamos Conversar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card de Perfil com Animação -->
+            <div class="hero-cartao-perfil elemento-revelar">
+                <div class="moldura-foto">
+                    <div class="foto-placeholder">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Gabriela R.</span>
+                    </div>
+                </div>
+                <div class="cartao-info-flutuante info-1">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <div>
+                        <strong>Formação em Andamento</strong>
+                        <small>SESC Escola & SENAC</small>
+                    </div>
+                </div>
+                <div class="cartao-info-flutuante info-2">
+                    <i class="bi bi-heart-fill"></i>
+                    <div>
+                        <strong>Foco Front-end</strong>
+                        <small>HTML5 • CSS3 • JS</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section class="secao" id="sobre">
+        <div class="conteiner">
+            <div class="cabecalho-secao elemento-revelar">
+                <span class="tag-secao">Quem sou eu</span>
+                <h2 class="titulo-secao">Sobre Mim</h2>
+            </div>
+
+            <div class="cartao-sobre elemento-revelar">
+                <div class="sobre-texto">
+                    <p>
+                        Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola</strong>, em parceria com o <strong>SENAC</strong>. Com forte foco em programação, iniciei minha trilha de aprendizado me especializando em desenvolvimento Front-end.
+                    </p>
+                    <p>
+                        Nos próximos anos, minha formação se expandirá para o Back-end (2º ano) e desenvolvimento Mobile (3º ano), construindo uma base sólida para me tornar uma Desenvolvedora Full Stack completa.
+                    </p>
+                </div>
+                <div class="grade-estatisticas">
+                    <div class="item-estatistica">
+                        <span class="numero-estatistica">1º</span>
+                        <span class="rotulo-estatistica">Ano do Ensino Técnico</span>
+                    </div>
+                    <div class="item-estatistica">
+                        <span class="numero-estatistica">3</span>
+                        <span class="rotulo-estatistica">Etapas do Roadmap (Front, Back & Mobile)</span>
+                    </div>
+                    <div class="item-estatistica">
+                        <span class="numero-estatistica">100%</span>
+                        <span class="rotulo-estatistica">Dedicação aos Estudos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE EDUCAÇÃO / LINHA DO TEMPO (ROADMAP) -->
+    <section class="secao" id="educacao">
+        <div class="conteiner">
+            <div class="cabecalho-secao elemento-revelar">
+                <span class="tag-secao">Minha Trajetória</span>
+                <h2 class="titulo-secao">Formação & Roadmap Acadêmico</h2>
+            </div>
+
+            <!-- Card de Destaque da Instituição -->
+            <div class="cartao-instituicao elemento-revelar">
+                <div class="cabecalho-instituicao">
+                    <div class="selo-excelencia">
+                        <i class="bi bi-patch-check-fill"></i> Parceria de Excelência
+                    </div>
+                    <span class="ano-conclusao">Conclusão prevista: <strong>2026</strong></span>
+                </div>
+                <h3 class="titulo-curso">Ensino Médio Integrado ao Técnico em Informática para Internet</h3>
+                <p class="nome-escola">SESC ESCOLA & SENAC</p>
+
+                <!-- Linha do Tempo (Roadmap em 3 Etapas) -->
+                <div class="linha-tempo-trilha">
+                    
+                    <!-- Etapa 1 -->
+                    <div class="etapa-trilha em-andamento">
+                        <div class="marcador-etapa">
+                            <i class="bi bi-layout-wysiwyg"></i>
+                        </div>
+                        <div class="conteudo-etapa">
+                            <span class="badge-status em-progresso">Atual / Em Andamento</span>
+                            <h4>1º Ano: Front-end</h4>
+                            <p>Especialização em criação de interfaces web responsivas, estruturação semântica, estilização moderna e lógica com JavaScript Vanilla.</p>
+                            <div class="tags-etapa">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 2 -->
+                    <div class="etapa-trilha proximo">
+                        <div class="marcador-etapa">
+                            <i class="bi bi-database-gear"></i>
+                        </div>
+                        <div class="conteudo-etapa">
+                            <span class="badge-status proximo-passo">Próximo Passo</span>
+                            <h4>2º Ano: Back-end</h4>
+                            <p>Desenvolvimento da camada do servidor, arquitetura de APIs, gerenciamento de banco de dados e lógica de negócios.</p>
+                            <div class="tags-etapa">
+                                <span>Banco de Dados</span>
+                                <span>APIs REST</span>
+                                <span>Lógica de Servidor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 3 -->
+                    <div class="etapa-trilha futuro">
+                        <div class="marcador-etapa">
+                            <i class="bi bi-phone-vibrate"></i>
+                        </div>
+                        <div class="conteudo-etapa">
+                            <span class="badge-status futuro-passo">Futuro</span>
+                            <h4>3º Ano: Mobile</h4>
+                            <p>Criação de aplicativos para dispositivos móveis, integração de serviços e finalização do ciclo Full Stack.</p>
+                            <div class="tags-etapa">
+                                <span>Dev Mobile</span>
+                                <span>Apps Responsivos</span>
+                                <span>Projetos Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE HABILIDADES (HARD SKILLS) -->
+    <section class="secao" id="habilidades">
+        <div class="conteiner">
+            <div class="cabecalho-secao elemento-revelar">
+                <span class="tag-secao">Conhecimentos</span>
+                <h2 class="titulo-secao">Minhas Habilidades</h2>
+            </div>
+
+            <div class="grade-habilidades">
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-filetype-html icone-habilidade"></i>
+                    <h3>HTML5</h3>
+                    <p>Estruturação semântica e acessível para a web.</p>
+                </div>
+
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-filetype-css icone-habilidade"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilização moderna, Flexbox, Grid e animações.</p>
+                </div>
+
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-filetype-js icone-habilidade"></i>
+                    <h3>JavaScript</h3>
+                    <p>Manipulação do DOM, eventos e lógica Vanilla.</p>
+                </div>
+
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-cpu icone-habilidade"></i>
+                    <h3>Lógica & Algoritmos</h3>
+                    <p>Resolução de problemas e estrutura de dados.</p>
+                </div>
+
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-git icone-habilidade"></i>
+                    <h3>Git</h3>
+                    <p>Controle de versão e histórico de alterações.</p>
+                </div>
+
+                <div class="cartao-habilidade elemento-revelar">
+                    <i class="bi bi-github icone-habilidade"></i>
+                    <h3>GitHub</h3>
+                    <p>Hospedagem de código, páginas e colaboração.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS E ESTUDOS -->
+    <section class="secao" id="projetos">
+        <div class="conteiner">
+            <div class="cabecalho-secao elemento-revelar">
+                <span class="tag-secao">Portfólio & Prática</span>
+                <h2 class="titulo-secao">Projetos & Repositórios</h2>
+            </div>
+
+            <!-- Subseção A: Projetos de Destaque -->
+            <div class="subsecao-projetos">
+                <h3 class="subtitulo-secao elemento-revelar">
+                    <i class="bi bi-star-fill"></i> Projetos de Destaque
+                </h3>
+
+                <div class="grade-projetos">
+                    
+                    <!-- Projeto 1 -->
+                    <article class="cartao-projeto elemento-revelar">
+                        <div class="imagem-projeto">
+                            <i class="bi bi-calculator"></i>
+                            <span class="badge-tecnologia">Prática de Lógica</span>
+                        </div>
+                        <div class="conteudo-projeto">
+                            <h4 class="titulo-projeto">Calculadora de IMC</h4>
+                            <p class="descricao-projeto">
+                                Aplicação interativa desenvolvida para consolidar conceitos de manipulação do DOM e lógica de programação em JavaScript.
+                            </p>
+                            <div class="tags-tecnologias-projeto">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="links-projeto">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-projeto-botao secundario">
+                                    <i class="bi bi-github"></i> Repositório
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="link-projeto-botao primario">
+                                    <i class="bi bi-box-arrow-up-right"></i> Ver Deploy
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="cartao-projeto elemento-revelar">
+                        <div class="imagem-projeto">
+                            <i class="bi bi-controller"></i>
+                            <span class="badge-tecnologia">Jogo Interativo</span>
+                        </div>
+                        <div class="conteudo-projeto">
+                            <h4 class="titulo-projeto">Jogo da Velha</h4>
+                            <p class="descricao-projeto">
+                                Jogo clássico desenvolvido com HTML, CSS e JavaScript Vanilla, contando com verificação automática de vitória e reinício de partida.
+                            </p>
+                            <div class="tags-tecnologias-projeto">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="links-projeto">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-projeto-botao secundario">
+                                    <i class="bi bi-github"></i> Repositório
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="link-projeto-botao primario">
+                                    <i class="bi bi-box-arrow-up-right"></i> Ver Deploy
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Subseção B: Repositórios de Estudo -->
+            <div class="subsecao-repositorios">
+                <h3 class="subtitulo-secao elemento-revelar">
+                    <i class="bi bi-journal-code"></i> Repositórios de Estudo
+                </h3>
+
+                <div class="grade-repositorios">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cartao-repositorio elemento-revelar">
+                        <div class="icone-repositorio">
+                            <i class="bi bi-filetype-html"></i>
+                        </div>
+                        <div class="info-repositorio">
+                            <h4>Trilha de HTML e CSS</h4>
+                            <p>Exercícios, layouts responsivos e anotações das aulas.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short seta-repositorio"></i>
+                    </a>
+
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cartao-repositorio elemento-revelar">
+                        <div class="icone-repositorio">
+                            <i class="bi bi-filetype-js"></i>
+                        </div>
+                        <div class="info-repositorio">
+                            <h4>Trilha de JavaScript Vanilla</h4>
+                            <p>Códigos, manipulação do DOM e desafios de programação.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short seta-repositorio"></i>
+                    </a>
+
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cartao-repositorio elemento-revelar">
+                        <div class="icone-repositorio">
+                            <i class="bi bi-terminal"></i>
+                        </div>
+                        <div class="info-repositorio">
+                            <h4>Lógica de Programação & Algoritmos</h4>
+                            <p>Exercícios de raciocínio lógico e Portugol em sala de aula.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short seta-repositorio"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO ("VAMOS CONVERSAR?") -->
+    <section class="secao" id="contato">
+        <div class="conteiner">
+            <div class="cabecalho-secao elemento-revelar">
+                <span class="tag-secao">Conexão & Oportunidades</span>
+                <h2 class="titulo-secao">Vamos Conversar?</h2>
+                <p class="subtitulo-contato">
+                    Estou em busca de conexões dinâmicas e da minha primeira oportunidade no mercado de tecnologia! Escolha uma das plataformas abaixo para falar comigo:
+                </p>
+            </div>
+
+            <!-- Cards de Contato com Hover Temático -->
+            <div class="grade-contatos">
+                
+                <!-- Card de E-mail / Modal -->
+                <button type="button" class="cartao-contato email" id="botaoAbrirModalEmail">
+                    <div class="icone-contato">
+                        <i class="bi bi-envelope-heart-fill"></i>
+                    </div>
+                    <div class="texto-contato">
+                        <span class="nome-rede">E-mail</span>
+                        <span class="detalhe-rede">Enviar mensagem direta</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle-fill icone-acao"></i>
+                </button>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="cartao-contato linkedin">
+                    <div class="icone-contato">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div class="texto-contato">
+                        <span class="nome-rede">LinkedIn</span>
+                        <span class="detalhe-rede">Conectar no perfil profissional</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle-fill icone-acao"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cartao-contato github">
+                    <div class="icone-contato">
+                        <i class="bi bi-github"></i>
+                    </div>
+                    <div class="texto-contato">
+                        <span class="nome-rede">GitHub</span>
+                        <span class="detalhe-rede">Conhecer meus repositórios</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle-fill icone-acao"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="cartao-contato whatsapp">
+                    <div class="icone-contato">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="texto-contato">
+                        <span class="nome-rede">WhatsApp</span>
+                        <span class="detalhe-rede">Conversar pelo chat</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle-fill icone-acao"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="cartao-contato instagram">
+                    <div class="icone-contato">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="texto-contato">
+                        <span class="nome-rede">Instagram</span>
+                        <span class="detalhe-rede">Acompanhar meu dia a dia</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right-circle-fill icone-acao"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL INTERATIVO PARA OPÇÕES DE E-MAIL -->
+    <div class="superposicao-modal" id="modalEmail">
+        <div class="conteudo-modal">
+            <button type="button" class="botao-fechar-modal" id="botaoFecharModalModal" aria-label="Fechar janela">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="cabecalho-modal">
+                <i class="bi bi-envelope-fill icone-modal"></i>
+                <h3>Entre em contato por E-mail</h3>
+                <p>Escolha a opção que preferir para falar comigo:</p>
+            </div>
+
+            <div class="opcoes-modal">
+                <!-- Abrir no Gmail -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabrielareisesouza@gmail.com" target="_blank" rel="noopener noreferrer" class="item-opcao-modal">
+                    <i class="bi bi-google"></i>
+                    <div>
+                        <strong>Abrir no Gmail Web</strong>
+                        <small>Abre a tela de envio direto no seu navegador</small>
+                    </div>
+                </a>
+
+                <!-- Abrir no Outlook -->
+                <a href="https://outlook.live.com/mail/0/deeplink/compose?to=gabrielareisesouza@gmail.com" target="_blank" rel="noopener noreferrer" class="item-opcao-modal">
+                    <i class="bi bi-microsoft"></i>
+                    <div>
+                        <strong>Abrir no Outlook Web</strong>
+                        <small>Para contas Hotmail ou Outlook na web</small>
+                    </div>
+                </a>
+
+                <!-- App Nativo de E-mail (mailto) -->
+                <a href="mailto:gabrielareisesouza@gmail.com" class="item-opcao-modal">
+                    <i class="bi bi-app-indicator"></i>
+                    <div>
+                        <strong>Aplicativo de E-mail Padrão</strong>
+                        <small>Dispara o app nativo do computador ou celular</small>
+                    </div>
+                </a>
+
+                <!-- Copiar Endereço -->
+                <button type="button" class="item-opcao-modal botao-copiar" id="botaoCopiarEmail">
+                    <i class="bi bi-clipboard-check" id="iconeCopiar"></i>
+                    <div>
+                        <strong id="textoBotaoCopiar">Copiar endereço de e-mail</strong>
+                        <small id="subtextoBotaoCopiar">gabrielareisesouza@gmail.com</small>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer class="rodape">
+        <div class="conteiner conteudo-rodape">
+            <p>
+                Copyright © <span id="anoAtual"></span> • Desenvolvido com <i class="bi bi-heart-fill icone-coracao"></i> por <strong>Gabriela Reis e Souza</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE VOLTAR AO TOPO -->
+    <button type="button" class="botao-topo" id="botaoTopo" aria-label="Voltar ao topo da página">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Importação do Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
